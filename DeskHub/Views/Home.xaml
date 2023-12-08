@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeskHub.Views.Home"
+             Title="Home Page"
+             BackgroundImageSource="background_new.png"
+             >
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="WELCOME TO DESKHUB!" FontSize="55" FontAttributes="Bold" Margin="0,-200,0,50" HorizontalOptions="Center" TextColor="White"></Label>
+        <Image Source="office.png"></Image>
+    </StackLayout>
+</ContentPage>

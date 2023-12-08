@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeskHub.Views.PricingPage"
+             Title="PricingPage"
+             BackgroundColor="#24936b"
+             Shell.NavBarIsVisible="False">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label Text="PRICING" FontSize="40"  FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" Margin="20,20,20,-10"/>
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="10" VerticalOptions="Center">
+            <Frame BackgroundColor="White" HeightRequest="400" WidthRequest="350" CornerRadius="15" HasShadow="True" >
+                <StackLayout Margin="10">
+                    <Label Text="Day Pass" FontSize="14" TextColor="Black" FontAttributes="Bold"/>
+                    <Label Text="₱380" FontSize="40" TextColor="Black" FontAttributes="Bold"/>
+                    <BoxView BackgroundColor="#B6B6B6" HeightRequest="1" ></BoxView>
+                    <HorizontalStackLayout Margin="-10,5,0,0">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"></Image>
+                        <Label Text="Fiber Wi-Fi" TextColor="Black" FontSize="14" FontAttributes="Bold"  Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="-10,-30,0,0">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"></Image>
+                        <Label Text="Ergonomic Seat" TextColor="Black" FontSize="14" FontAttributes="Bold"  Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="-10,-30,0,0">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"></Image>
+                        <Label Text="Power Outlets" TextColor="Black" FontSize="14" FontAttributes="Bold"  Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="-10,-30,0,0">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"></Image>
+                        <Label Text="Napping Station" TextColor="Black" FontSize="14" FontAttributes="Bold"  Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+
+                    <Button x:Name="btnBook380" HeightRequest="45" Margin="0,10,0,0" WidthRequest="250" Text="Book Now!" FontAttributes="Bold" FontSize="20" TextColor="White" Clicked="OnbtnBook380_Clicked" BackgroundColor="#1c1a1c"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BorderColor="Black" BackgroundColor="White" HeightRequest="400" WidthRequest="350"  CornerRadius="15" Margin="20" HasShadow="True">
+                <StackLayout  Margin="10">
+                    <Label Text="Hourly" FontSize="14" TextColor="Black" FontAttributes="Bold" />
+                    <Label Text="₱60" FontSize="40" TextColor="Black" FontAttributes="Bold"  />
+                    <BoxView BackgroundColor="#B6B6B6" HeightRequest="1" ></BoxView>
+                    <HorizontalStackLayout Margin="-10,5,0,0">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"></Image>
+                        <Label Text="Fiber Wi-Fi" FontSize="14" TextColor="Black" FontAttributes="Bold"  Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="-10,-30,0,0">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"></Image>
+                        <Label Text="Ergonomic Seat" FontSize="14" TextColor="Black" FontAttributes="Bold"  Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="-10,-30,0,0">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"></Image>
+                        <Label Text="Power Outlets" FontSize="14" TextColor="Black" FontAttributes="Bold"  Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="-10,-30,0,0">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"></Image>
+                        <Label Text="Napping Station" FontSize="14" TextColor="Black" FontAttributes="Bold" Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+                    <Button x:Name="btnBook60"  HeightRequest="45" Margin="0,10,0,0" WidthRequest="250" Text="Book Now!" FontAttributes="Bold" FontSize="20" TextColor="White"  Clicked="OnbtnBook60_Clicked" BackgroundColor="#25936b"/>
+                </StackLayout>
+            </Frame>
+            
+            <Frame BackgroundColor="White" HeightRequest="400" WidthRequest="350" CornerRadius="15"  HasShadow="True">
+                <StackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Monthly" FontSize="14" TextColor="Black" FontAttributes="Bold" Margin="0,10,0,0" />
+                        <Label Text="₱2,000 Weekly" FontSize="14" TextColor="Black"  Margin="20,10,0,0" FontAttributes="Italic"/>
+                    </HorizontalStackLayout>
+                    <Label Text="₱8,000" FontSize="40" TextColor="Black" FontAttributes="Bold"/>
+                    <BoxView BackgroundColor="#B6B6B6" HeightRequest="1" ></BoxView>
+                    <HorizontalStackLayout Margin="-10,5,0,-5">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"></Image>
+                        <Label Text="Fiber Wi-Fi" FontSize="14" TextColor="Black" FontAttributes="Bold"  Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="-10,-30,0,-5">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"></Image>
+                        <Label Text="Ergonomic Seat" FontSize="14" TextColor="Black" FontAttributes="Bold" Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="-10,-30,0,-5">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"></Image>
+                        <Label Text="Power Outlets" FontSize="14" TextColor="Black" FontAttributes="Bold"  Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="-10,-30,0,-5">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"></Image>
+                        <Label Text="Napping Station" FontSize="14" TextColor="Black" FontAttributes="Bold"  Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="-10,-30,0,-5">
+                        <Image Source="graycheck.png" WidthRequest="72" HeightRequest="72"/>
+                        <Label Text="Free Locker Usage" FontSize="14" TextColor="Black" FontAttributes="Bold" Margin="-15,25,0,0"/>
+                    </HorizontalStackLayout>
+                    <Button x:Name="btnBook8000" HeightRequest="45" Margin="0,-6,0,0" WidthRequest="250" Text="Book Now!" FontAttributes="Bold" TextColor="White" FontSize="20"  Clicked="OnbtnBook8000_Clicked" BackgroundColor="#1c1a1c"/>
+                </StackLayout>
+            </Frame>
+        </HorizontalStackLayout>
+    </StackLayout>
+</ContentPage>

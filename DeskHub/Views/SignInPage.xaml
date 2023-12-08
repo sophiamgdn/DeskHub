@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeskHub.Views.SignInPage"
+             Title="SignInPage"
+             BackgroundColor="#24936b"
+             Shell.NavBarIsVisible="False">
+    
+    <StackLayout HorizontalOptions="Center" Margin="20,30,20,20" VerticalOptions="Center">
+        <Frame WidthRequest="1000" BackgroundColor="White" HeightRequest="500"  CornerRadius="15" >
+            <StackLayout>
+                <HorizontalStackLayout Spacing="350">
+                    <VerticalStackLayout>
+                        <Frame Margin="20,10,0,0" BackgroundColor="#24936b" WidthRequest="450" HeightRequest="450" CornerRadius="80" >
+                            <StackLayout Margin="10" Padding="20">
+                                <Label Text="DeskHub" TextColor="White" FontFamily="Primary" FontSize="16" FontAttributes="Bold"/>
+                                <Label Text="Start your journey" TextColor="White" FontSize="35" FontFamily="Primary" FontAttributes="Bold" Margin="0,10,0,0"/>
+                                <Label Text="with us" TextColor="White" FontSize="35" FontFamily="Primary" FontAttributes="Bold" Margin="0,-10,0,0"/>
+                                <Label Text="Discovery Cebu City’s Co-working place: HubDesk is a" TextColor="White" FontSize="14" FontFamily="Secondary" Margin="0,10,0,0"/>
+                                <Label Text="coworking café – a good place for you to work in a café" TextColor="White" FontSize="14" FontFamily="Secondary"/>
+                                <Label Text="experience! Come, have coffee, while coworking with us!" TextColor="White" FontSize="14" FontFamily="Secondary"/>
+                                <Frame  VerticalOptions="Center" BackgroundColor="White" WidthRequest="370" HeightRequest="70" Padding="20" Margin="0,15,0,0">
+                                    <StackLayout >
+                                        <Label Text="Sophia Kyla Magadan" FontSize="14" TextColor="Black" FontAttributes="Bold" Margin="0,-10,0,5" FontFamily="Secondary"></Label>
+                                        <Label Text="Very accomodating staffs, fast internet and coffee/iced too will be served on you  once you choose your table." TextColor="Black" FontSize="12" FontAttributes="None" Margin="0,-5,0,5" FontFamily="Light"></Label>
+                                    </StackLayout>
+                                </Frame>
+                                <Frame VerticalOptions="Center" BackgroundColor="White"  WidthRequest="370" HeightRequest="72" Padding="20" Margin="0,15,0,0">
+                                    <StackLayout>
+                                        <Label Text="Jeinesson Baltazar" TextColor="Black" FontSize="14" FontAttributes="Bold" Margin="0,-10,0,5" FontFamily="Secondary"></Label>
+                                        <Label Text="Very accomodating staffs, fast internet and coffee/iced too will be served on you once you choose your table." TextColor="Black" FontSize="12" FontAttributes="None" Margin="0,-5,0,5" FontFamily="Light"></Label>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </Frame>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Spacing="20" HorizontalOptions="Center">
+                        <HorizontalStackLayout  Margin="-300,-5,0,0">
+                            <Border Stroke="Transparent">
+                                <Image Source = "logo.png" HorizontalOptions="Center" Margin="-50,-120,0,0" HeightRequest="400" WidthRequest="400"></Image>
+                            </Border>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Margin="-135,-185,0,0">
+                            <Label Text="Login" TextColor="Black" FontAttributes="Bold" FontSize="30"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Margin="-170,-20,0,0">
+                            <Label Text="Sign in to your account" TextColor="Black" FontSize="14"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 5,5,5,5" WidthRequest="300" Margin="-250,0,0,0">
+                                <Entry x:Name="txtusernameEntry" Placeholder="Username"  BackgroundColor="White"  MaxLength="50" HeightRequest="45" TextColor="Black"  TextChanged="OnUsernameEntryChanged"/>
+                            </Border>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 5,5,5,5" WidthRequest="300" Margin="-250,-10,0,0">
+                                <Entry  x:Name="txtpasswordEntry" IsPassword="True" Placeholder="Password" BackgroundColor="White" MaxLength="50" HeightRequest="45" TextColor="Black" TextChanged="OnPasswordEntryChanged"/>
+                            </Border>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Margin="-250,10,0,0">
+                            <Button x:Name="btnLogIn" Text="Login" TextColor="White" FontAttributes="Bold" Clicked="LoginClicked" WidthRequest="300" BackgroundColor="#24936b" />
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Margin="-250,-10,0,0">
+                            <Button x:Name="btnsignUp" Text="Register New Account" TextColor="White" BackgroundColor="Gray" Clicked="OnbtnSignUpClicked" WidthRequest="300" FontAttributes="Bold"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>

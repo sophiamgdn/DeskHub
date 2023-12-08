@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeskHub.Views.AboutPage"
+             Title="AboutPage"
+             BackgroundColor="#24936b"
+             Shell.NavBarIsVisible="False">
+
+    <Frame BackgroundColor="White" Margin="30,10,30,30" CornerRadius="15" WidthRequest="1000" HeightRequest="450">
+        <StackLayout>
+            <HorizontalStackLayout>
+                <VerticalStackLayout>
+                    <Label FontFamily="Primary" Text="DeskHub" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
+                    <Label FontFamily="Primary" Text="About us" TextColor="Black" FontSize="40" FontAttributes="Bold" Margin="0,5,0,0"/>
+                    <BoxView BackgroundColor="#B6B6B6" HeightRequest="1"></BoxView>
+                    <Label FontFamily="Secondary" Text="We were founded with a simple yet powerful purpose" Margin="0,15,0,0" TextColor="Black" FontSize="14" FontAttributes="None"/>
+                    <Label FontFamily="Secondary" Text="in mind - to revolutionize the way professionals work," TextColor="Black" FontSize="14" FontAttributes="None"/>
+                    <Label FontFamily="Secondary" Text="connect, and thrive" FontSize="14" FontAttributes="None" TextColor="Black"/>
+                    <HorizontalStackLayout Margin="10,20,0,0">
+                        <Image Source="checkmark.png" HeightRequest="56" WidthRequest="56" Margin="-20,-18,-20,-20"/>
+                        <Label FontFamily="Primary" Text="Mission" FontAttributes="Bold" Margin="5,0,0,0" TextColor="Black" FontSize="16"/>
+                    </HorizontalStackLayout>
+                    <Label FontFamily="Secondary" Text="Our mission is to foster a collaborative environment" Margin="10,15,0,0" FontAttributes="None" TextColor="Black" FontSize="14"/>
+                    <Label FontFamily="Secondary" Text="that nurtures creativity, encourages innovation, and" Margin="10,0,0,0" FontAttributes="None" TextColor="Black" FontSize="14"/>
+                    <Label FontFamily="Secondary" Text="supports the growth of individuals and businesses alike." Margin="10,0,0,0" FontAttributes="None" TextColor="Black" FontSize="14"/>
+                    <HorizontalStackLayout  Margin="10,10,0,0">
+                        <Image Source="checkmark.png" HeightRequest="56" WidthRequest="56" Margin="-20,-18,-20,-20"/>
+                        <Label FontFamily="Primary" Text="Vision" FontAttributes="Bold" Margin="5,0,0,0" TextColor="Black" FontSize="16"/>
+                    </HorizontalStackLayout>
+                    <Label FontFamily="Secondary" FontAttributes="None" Margin="10,15,0,0" Text="We envision a global netwrok of coworking cafes that" TextColor="Black" FontSize="14"/>
+                    <Label FontFamily="Secondary" FontAttributes="None" Margin="10,0,0,0" Text="inspire and empower professionals to reach new heights" TextColor="Black" FontSize="14"/>
+                    <Label FontFamily="Secondary" FontAttributes="None" Margin="10,0,0,0" Text="of success." TextColor="Black" FontSize="14"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Image Source="illustration_two.png" HeightRequest="700" WidthRequest="400" Margin="215,-135,0,0"/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </StackLayout>
+    </Frame>
+</ContentPage>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="DeskHub.Views.AdminHome"
+            Title="AdminHome"
+            BarTextColor="#24936b">
+
+    <ContentPage IconImageSource="logo_small.svg" Title=" " IsEnabled="False">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Padding="100" Margin="50">
+            <Label Text="WELCOME TO DESKHUB" FontSize="55" FontAttributes="Bold" Margin="0,-150,0,20" HorizontalOptions="Center"></Label>
+            <Image Source="office.png" HeightRequest="350"></Image>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage IconImageSource="logo_small.svg" Title=" " IsEnabled="False">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Padding="100" Margin="50">
+            <Label Text="WELCOME TO DESKHUB" FontSize="55" FontAttributes="Bold" Margin="0,-150,0,20" HorizontalOptions="Center"></Label>
+            <Image Source="office.png" HeightRequest="350"></Image>
+        </StackLayout>
+    </ContentPage>
+    
+    <ContentPage  Title=" " IsEnabled="False" >
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Padding="100" Margin="50">
+            <Label Text="WELCOME TO DESKHUB" FontSize="55" FontAttributes="Bold" Margin="0,-150,0,20" HorizontalOptions="Center"></Label>
+            <Image Source="office.png" HeightRequest="350"></Image>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage  Title=" " IsEnabled="False">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Padding="100" Margin="50">
+            <Label Text="WELCOME TO DESKHUB" FontSize="55" FontAttributes="Bold" Margin="0,-150,0,20" HorizontalOptions="Center"></Label>
+            <Image Source="office.png" HeightRequest="350"></Image>
+        </StackLayout>
+    </ContentPage>
+  
+    
+    <ContentPage BackgroundColor="White" Title="Home" BackgroundImageSource="background_new.png">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Padding="100" Margin="50">
+            <Label Text="WELCOME TO DESKHUB!" FontSize="55" FontAttributes="Bold" Margin="0,-100,0,20" HorizontalOptions="Center" TextColor="White"></Label>
+            <Border StrokeShape="RoundRectangle 15,15,15,15" Stroke="Transparent">
+                <Image Source="office.png" HeightRequest="425"></Image>
+            </Border>
+        </StackLayout>
+    </ContentPage>
+    
+    <local:AcceptPayment Title="Accept Payment" xmlns:local="clr-namespace:DeskHub.Views"></local:AcceptPayment>
+    <local:BookReservation Title="Book Reservation" xmlns:local="clr-namespace:DeskHub.Views"></local:BookReservation>
+    <local:PayOnline Title="Pay Online" xmlns:local="clr-namespace:DeskHub.Views"></local:PayOnline>
+    <local:PayInPerson Title="Pay In-Person" xmlns:local="clr-namespace:DeskHub.Views"></local:PayInPerson>
+    <local:ModifyEmployee Title="Modify Employee" xmlns:local="clr-namespace:DeskHub.Views"></local:ModifyEmployee>
+    <local:ModifyRooms Title="Modify Rooms" xmlns:local="clr-namespace:DeskHub.Views"></local:ModifyRooms>
+    <local:LogOutPage Title ="Log out" xmlns:local="clr-namespace:DeskHub.Views"></local:LogOutPage>
+    
+</TabbedPage>

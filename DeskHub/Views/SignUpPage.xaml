@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeskHub.Views.SignUpPage"
+             Title="SignUpPage"
+             BackgroundColor="#24936b"
+             Shell.NavBarIsVisible="False">
+
+    <StackLayout HorizontalOptions="Center" Margin="10,30,20,10" VerticalOptions="Center">
+        <Frame WidthRequest="1200" HeightRequest="510" BackgroundColor="White"  CornerRadius="15">
+            <HorizontalStackLayout Spacing="250">
+                <VerticalStackLayout>
+                    <Frame Margin="20,10,0,0" BackgroundColor="#24936b" WidthRequest="450" HeightRequest="450" CornerRadius="80" >
+                        <StackLayout Margin="10" Padding="20">
+                            <Label Text="DeskHub" TextColor="White" FontFamily="Calibri" FontSize="16" FontAttributes="Bold"/>
+                            <Label Text="Start your journey" TextColor="White" FontSize="35" FontFamily="Calibri" FontAttributes="Bold" Margin="0,10,0,0"/>
+                            <Label Text="with us" TextColor="White" FontSize="35" FontFamily="Calibri" FontAttributes="Bold" Margin="0,-10,0,0"/>
+                            <Label Text="Discovery Cebu City’s Co-working place: HubDesk is a" TextColor="White" FontSize="14" FontFamily="Calibri" Margin="0,10,0,0"/>
+                            <Label Text="coworking café – a good place for you to work in a café" TextColor="White" FontSize="14" FontFamily="Calibri"/>
+                            <Label Text="experience! Come, have coffee, while coworking with us!" TextColor="White" FontSize="14" FontFamily="Calibri"/>
+                            <Frame  VerticalOptions="Center"  WidthRequest="370" HeightRequest="70" Padding="20" BackgroundColor="White" Margin="0,15,0,0">
+                                <StackLayout >
+                                    <Label Text="Sophia Kyla Magadan" FontSize="14" FontAttributes="Bold" TextColor="Black" Margin="0,-10,0,5"></Label>
+                                    <Label Text="Very accomodating staffs, fast internet and coffee/iced too will be served on you  once you choose your table." TextColor="Black" FontSize="12" FontAttributes="None" Margin="0,-5,0,5"></Label>
+                                </StackLayout>
+                            </Frame>
+                            <Frame VerticalOptions="Center"  WidthRequest="370" HeightRequest="72" Padding="20" BackgroundColor="White" Margin="0,15,0,0">
+                                <StackLayout>
+                                    <Label Text="Jeinesson Baltazar" FontSize="14" FontAttributes="Bold" TextColor="Black" Margin="0,-10,0,5"></Label>
+                                    <Label Text="Very accomodating staffs, fast internet and coffee/iced too will be served on you once you choose your table." TextColor="Black" FontSize="12" FontAttributes="None" Margin="0,-5,0,5"></Label>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </Frame>
+                </VerticalStackLayout>
+                <VerticalStackLayout Spacing="20" HorizontalOptions="Center">
+                    <HorizontalStackLayout  Margin="-80,-35,0,0">
+                        <Border Stroke="Transparent">
+                            <Image Source = "logo.png" HorizontalOptions="Center" Margin="10,-80,0,5" HeightRequest="300" WidthRequest="300"></Image>
+                        </Border>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="70,-150,0,0">
+                        <Label Text="Sign Up" TextColor="Black" FontAttributes="Bold" FontSize="25"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="50,-18,0,0">
+                        <Label Text="Have an account?" TextColor="Black" FontSize="12" HorizontalOptions="Center"/>
+                        <Label Text="Login" TextColor="Blue" FontSize="12" HorizontalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnLabelTapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <VerticalStackLayout Spacing="20">
+                            <HorizontalStackLayout Margin="-212,-5,0,0">
+                                <Label Text="First Name:" TextColor="Black" Margin="-15,10,26,10" FontAttributes="Bold"></Label>
+                                <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 5,5,5,5">
+                                    <Entry x:Name="txtFirstName"  PlaceholderColor="Gray" Placeholder="Enter First Name" BackgroundColor="White" MaxLength="100" HeightRequest="45" TextColor="Black"  WidthRequest="200" TextChanged="OnFirstNameChanged"/>
+                                </Border>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout Margin="-215,-15,0,0" Spacing="5">
+                                <Label Text="Middle Name:" TextColor="Black" Margin="-15,10,10,10" FontAttributes="Bold"></Label>
+                                <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 5,5,5,5">
+                                    <Entry x:Name="txtMiddleName"  PlaceholderColor="Gray" Placeholder="Enter Middle Name" BackgroundColor="White" MaxLength="100" HeightRequest="45" TextColor="Black"  WidthRequest="200" TextChanged="OnMiddleNameChanged"/>
+                                </Border>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout Margin="-213,-15,0,0">
+                                <Label Text="Last Name:" TextColor="Black" Margin="-15,10,30,10" FontAttributes="Bold"></Label>
+                                <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 5,5,5,5">
+                                    <Entry x:Name="txtLastName"  PlaceholderColor="Gray" Placeholder="Enter Last Name" BackgroundColor="White" MaxLength="100" HeightRequest="45" TextColor="Black"  WidthRequest="200" TextChanged="OnLastNameChanged"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="-215,-15,0,0">
+                                <Label Text="Email:" TextColor="Black" Margin="-15,10,65,10" FontAttributes="Bold"></Label>
+                                <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 5,5,5,5">
+                                    <Entry x:Name="txtemailEntry" Placeholder="spaces@deskhub.com" PlaceholderColor="Gray" BackgroundColor="White" MaxLength="50" HeightRequest="45" TextColor="Black" WidthRequest="200"  TextChanged="OnEmailTextChanged"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="-220,-15,0,0">
+                                <Label Text="Phone:" TextColor="Black" Margin="-10,10,60,10" FontAttributes="Bold"></Label>
+                                <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 5,5,5,5">
+                                    <Entry x:Name="txtPhone" Placeholder="0123-456-7890" PlaceholderColor="Gray" BackgroundColor="White" MaxLength="50" HeightRequest="45" TextColor="Black" WidthRequest="200"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="-210,-15,0,0">
+                                <Label Text="Gender:" TextColor="Black" FontAttributes="Bold" Margin="-15,10,75,0"></Label>
+                                <RadioButton x:Name="rdoFemale" Content="Female" TextColor="Black"/>
+                                <RadioButton x:Name="rdoMale" Content="Male" TextColor="Black"/>
+                            </HorizontalStackLayout>
+                            
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Spacing="20">
+                            <HorizontalStackLayout Margin="28,-10,0,0">
+                                <Label Text="Address:" TextColor="Black" Margin="-15,12,45,10" FontAttributes="Bold"></Label>
+                                <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 5,5,5,5" WidthRequest="200">
+                                    <Entry  x:Name="txtAddress" IsPassword="False" PlaceholderColor="Gray" Placeholder="Enter Address" BackgroundColor="White" MaxLength="50" HeightRequest="45" TextColor="Black"/>
+                                </Border>
+                            </HorizontalStackLayout>
+                           
+                            <HorizontalStackLayout Margin="30,-10,0,0">
+                                <Label Text="Birthday:" TextColor="Black" Margin="-15,12,42,10" FontAttributes="Bold"></Label>
+                                <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 5,5,5,5" WidthRequest="200">
+                                    <DatePicker x:Name="pkrBirthday"  BackgroundColor="#24936b" TextColor="White" WidthRequest="200"></DatePicker>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="30,-10,0,0">
+                                <Label Text="Username:" TextColor="Black" Margin="-15,12,30,10" FontAttributes="Bold"></Label>
+                                <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 5,5,5,5" WidthRequest="200">
+                                    <Entry x:Name="txtusernameEntry" Placeholder="Enter Username" PlaceholderColor="Gray"  BackgroundColor="White"  MaxLength="50" HeightRequest="45" TextColor="Black"  TextChanged="OnUsernameEntryChanged"/>
+                                </Border>
+                            </HorizontalStackLayout>
+                           
+                            <HorizontalStackLayout Margin="27,-10,0,0">
+                                <Label Text="Password:" TextColor="Black" Margin="-15,12,34,10" FontAttributes="Bold"></Label>
+                                <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 5,5,5,5" WidthRequest="200">
+                                    <Entry  x:Name="txtpasswordEntry" IsPassword="True" PlaceholderColor="Gray" Placeholder="Enter Password" BackgroundColor="White" MaxLength="50" HeightRequest="45" TextColor="Black" TextChanged="OnPasswordEntryChanged"/>
+                                </Border>
+                            </HorizontalStackLayout>
+                            
+                            <HorizontalStackLayout Margin="30,-15,0,0">
+                                <Label Text="User Type:" TextColor="Black" FontAttributes="Bold" Margin="-15,10,50,0"></Label>
+                                <RadioButton x:Name="rdoAdminRadioButton" Content="Admin" TextColor="Black"/>
+                                <RadioButton x:Name="rdoClientRadioButton" Content="Client" TextColor="Black"/>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout Margin="30,-20,0,0">
+                                <Button x:Name="btnSubmit" Text="Submit" TextColor="White" FontAttributes="Bold" Clicked="OnSignUpClicked" WidthRequest="300"  BackgroundColor="#24936b"/>
+                            </HorizontalStackLayout>
+                        
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

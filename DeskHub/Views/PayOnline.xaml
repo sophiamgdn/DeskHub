@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeskHub.Views.PayOnline"
+             Title="PayOnline"
+             BackgroundImageSource="background_new.png">
+
+        <VerticalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="20,20,20,0">
+                <Label Text="Pay Online" TextColor="White" FontSize="60" FontAttributes="Bold"></Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="20" Spacing="20">
+                <Frame BackgroundColor="White" WidthRequest="500" HeightRequest="510">
+                    <VerticalStackLayout>
+                        <HorizontalStackLayout Margin="5">
+                            <Label Text="Payment Details" FontSize="20" FontAttributes="Bold" TextColor="#24936b"></Label>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Margin="5,0,5,10">
+                            <Label Text="Summary of selected details:" TextColor="Black" FontSize="12"/>
+                        </HorizontalStackLayout>
+                        <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+                        <HorizontalStackLayout Margin="5,5,5,0">
+                            <Label Text="Room ID:" Margin="0,15,80,0" TextColor="Black"></Label>
+                            <Border WidthRequest="300" Margin="5,5,5,5" StrokeShape="RoundRectangle 10,10,10,10" Stroke="black">
+                                <Entry x:Name="roomIDEntry" BackgroundColor="White" TextColor="Black" IsReadOnly="True"></Entry>
+                            </Border>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Margin="5,0,5,0">
+                            <Label Text="Room Type:" Margin="0,15,62,0" TextColor="Black"></Label>
+                            <Border WidthRequest="300" Margin="5,5,5,5" StrokeShape="RoundRectangle 10,10,10,10" Stroke="black">
+                                <Entry x:Name="roomTypeEntry" BackgroundColor="White" TextColor="Black" IsReadOnly="True"></Entry>
+                            </Border>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout Margin="5,0,5,0">
+                            <Label Text="Room Rate:" Margin="0,15,63,0" TextColor="Black"></Label>
+                            <Border WidthRequest="300" Margin="5,5,5,5" StrokeShape="RoundRectangle 10,10,10,10" Stroke="black">
+                                <Entry x:Name="roomRateEntry" BackgroundColor="White" TextColor="Black" IsReadOnly="True"></Entry>
+                            </Border>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout Margin="5,0,5,0">
+                            <Label Text="Pay code:" Margin="0,15,74,0" TextColor="Black"></Label>
+                            <Border WidthRequest="300" Margin="5,5,5,5" StrokeShape="RoundRectangle 10,10,10,10" Stroke="black">
+                                <Entry x:Name="txtPayCode" BackgroundColor="White" TextColor="Black" IsReadOnly="True"></Entry>
+                            </Border>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout Margin="5,0,5,5">
+                            <Label Text="Credit Card#:" Margin="0,15,50,0" TextColor="Black"></Label>
+                            <Border WidthRequest="300" Margin="5,5,5,5" StrokeShape="RoundRectangle 10,10,10,10" Stroke="black">
+                                <Entry x:Name="txtCreditCard" Keyboard="Numeric" TextChanged="OnCreditCardEntryTextChanged" BackgroundColor="White" TextColor="Black" Placeholder="Enter Credit Card Number" ToolTipProperties.Text="Required" ></Entry>
+                            </Border>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout Margin="7,0,5,0">
+                            <Label Text="Email:" Margin="0,15,100,0" TextColor="Black"></Label>
+                            <Border WidthRequest="300" StrokeShape="RoundRectangle 10,10,10,10" Stroke="black">
+                                <Entry x:Name="txtEmail" Keyboard="Email" TextChanged="OnEmailTextChanged" TextColor="Black"  BackgroundColor="White" Placeholder="Enter Email"></Entry>
+                            </Border>
+                        </HorizontalStackLayout>
+                        <BoxView BackgroundColor="Black" Margin="0,10" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+
+                        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10" Margin="0,3">
+                            <Button x:Name="btnProceedPayment" Text="Proceed Payment" Clicked="OnbtnProceedPayment" BackgroundColor="#24936b" WidthRequest="200" FontAttributes="Bold"></Button>
+                            <Button x:Name="btnCancelPayment" Text="Cancel Payment" Clicked="OnBtnCancelPayment" BackgroundColor="#24936b" FontAttributes="Bold" WidthRequest="200"></Button>
+                        </HorizontalStackLayout>
+
+                    </VerticalStackLayout>
+                </Frame>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+</ContentPage>

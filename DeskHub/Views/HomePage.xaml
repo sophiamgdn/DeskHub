@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="DeskHub.Views.HomePage"
+            Title="HomePage"
+            Shell.BackgroundColor="#ffffff"
+            BackgroundColor="#24936b"
+            Shell.NavBarIsVisible="False"
+            >
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="30,10,30,30">
+                <Frame BackgroundColor="#24936b" Margin="10" WidthRequest="450" BorderColor="Transparent">
+                    <StackLayout>
+                        <Label TextColor="White" Text="Glad to be" FontSize="40" FontAttributes="Bold" Margin="0,30,0,0" FontFamily="Primary"></Label>
+                    <Label TextColor="White" Text="working with you!" FontSize="40" Margin="0,-10,0,0" FontAttributes="Bold" FontFamily="Primary"></Label>
+                        <Label Margin="0,70,0,20" CharacterSpacing="0.5" Text="Indulge in our freshly brewed coffees, handcrafted beverages, and mouthwatering snacks while you work on your projects. Our baristas are passionate about their craft, ensuring that every sip fuels your productivity and every bite satisfies your cravings." TextColor="White" FontSize="14" LineBreakMode="WordWrap" FontFamily="Light"/>
+                    <Label CharacterSpacing="0.5" Text="With high-speed Wi-Fi, ample power outlets, and comfortable seating options, DeskHub provides the ideal setting for focused work sessions, team meetings, or networking opportunities. Connect with like-minded professionals, exchange ideas, and cultivate meaningful relationships within our supportive community." TextColor="White" FontSize="14" LineBreakMode="WordWrap" FontFamily="Light"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#24936b" BorderColor="Transparent" Margin="10" WidthRequest="450">
+                    <Image Source="illustration1.png" Scale="2"></Image>
+                </Frame>
+            </HorizontalStackLayout>
+        </StackLayout>
+
+    
+</ContentPage>

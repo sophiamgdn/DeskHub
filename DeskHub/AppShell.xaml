@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DeskHub.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DeskHub.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.TabBarBackgroundColor="#ffffff"
+    Shell.TabBarForegroundColor="#24936b"
+    >
+
+    <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" 
+        Icon="logo.png"/>-->
+
+    <TabBar Title="DeskHub">
+        
+        <Tab Title=" " Icon="logo_small.png" >
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title=" " IsVisible="True" IsEnabled="False">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title="Home">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"></ShellContent>
+        </Tab>
+        <Tab Title="About" >
+            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}"></ShellContent>
+        </Tab>
+        <Tab Title="Pricing">
+            <ShellContent ContentTemplate="{DataTemplate local:PricingPage}"></ShellContent>
+        </Tab>
+        <Tab Title="Contact" >
+            <ShellContent ContentTemplate="{DataTemplate local:ContactPage}"></ShellContent>
+        </Tab>
+        <Tab Title="Sign In">
+            <ShellContent ContentTemplate="{DataTemplate local:SignInPage}" Route="SignInPage"></ShellContent>
+        </Tab>
+        <Tab Title="Sign Up" >
+            <ShellContent ContentTemplate="{DataTemplate local:SignUpPage}" Route="SignUpPage"></ShellContent>
+        </Tab>
+        
+    </TabBar>
+    
+
+</Shell>

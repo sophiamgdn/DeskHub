@@ -1,0 +1,8 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeskHub.Views.LogOutPage"
+             Shell.NavBarIsVisible="false"
+             BackgroundImageSource="background_new.png"
+             xmlns:j="clr-namespace:DeskHub.Models"
+             x:DataType="j:User">
+</ContentPage>
